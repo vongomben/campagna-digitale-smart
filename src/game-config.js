@@ -10,7 +10,6 @@ export const gameConfig = {
   id: "campagna-digitale-smart",
   title: "Campagna Digitale Smart",
   subtitle: "Digital Media Specialist Challenge",
-  lockerCode: "3958", // PROVVISORIO — verificare contro il registro master (Excel) prima del commit
   intro: {
     context:
       "Siete appena entrati in un'agenzia di digital marketing. Un cliente " +

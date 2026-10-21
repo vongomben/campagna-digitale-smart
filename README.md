@@ -26,11 +26,6 @@ Non copiare `dist/` nel sito finché Davide non conferma.
 ## Gioco
 
 - 6 stage sequenziali, una risposta alla volta; se sbagli puoi riprovare.
-- Esito positivo se al massimo **1** stage ha avuto un tentativo errato: in quel caso compare il codice locker.
-- Esito negativo da **2** errori in su: nessun codice.
+- A fine partita: da 1 a 5 stelle in base agli stage con almeno un errore (0 → 5, 1 → 4, 2 → 3, 3–4 → 2, 5–6 → 1). Calcolo in `src/stelle.js`, soglie in `SOGLIE_STELLE` (`src/main.js`) o in `gameConfig.punteggio.soglie`.
+- Messaggio positivo se al massimo **1** stage ha avuto un errore (`MAX_MISTAKES_FOR_SUCCESS`), altrimenti messaggio «da rivedere».
 - Niente timer, niente `localStorage`.
-
-## Note
-
-- `lockerCode` in `src/game-config.js` è ancora **provvisorio** (`3958`): da allineare al registro locker prima del commit.
-- La soglia errori (`MAX_MISTAKES_FOR_SUCCESS` in `src/main.js`) è un’assunzione da confermare.
